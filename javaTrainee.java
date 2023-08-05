@@ -1,5 +1,4 @@
 class javaTrainee {
-
     String name, mob, clg;
     int age, id;
 
