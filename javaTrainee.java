@@ -1,12 +1,13 @@
+// import java.util.Scanner;
+
 class javaTrainee {
     String name, mob, clg;
     int age, id;
 
     public static void main(String[] args) {
-        javaTrainee t = new javaTrainee(); // 1 object
-
-         System.out.println(t);
-        //  t.viewInfo();
+        // javaTrainee t = new javaTrainee(); // 1 object
+        // System.out.println(t);
+        // t.viewInfo();
         // t.name = "nilu";
         // t.clg = "LIT";
         // t.mob = "5767789";
@@ -37,22 +38,64 @@ class javaTrainee {
         // t2.name="swtantarnilu"; //change the name using 2 obj
         // t1.viewInfo();
 
-        t.setdata();
-        t.viewInfo();
+        // t.setdata();
+        // t.viewInfo();
+
+        // javaTrainee t2 = new javaTrainee();
+        // t2.setdata("nilu", "LIT", "9087", 23, 909);
+        // System.out.println("first info**********");
+        // t2.viewInfo();
+
+        // javaTrainee t3 = new javaTrainee();
+        // t3.setdata("nilu singh", "LIT lko", "9087688899", 24, 9098899);
+        // System.out.println("second info******");
+        // t3.viewInfo();
+
+        // take user input
+
+        java.util.Scanner s = new java.util.Scanner(System.in);
+        System.out.println("enter the name");
+        String n = s.next();
+        System.out.println("enter the clgname");
+        String c = s.next();
+        System.out.println("enter the mobile");
+        String m = s.next();
+        System.out.println("enter age");
+        int a = s.nextInt();
+        System.out.println("enter id");
+        int i = s.nextInt();
+        javaTrainee t4 = new javaTrainee();
+        t4.setdata(n, c, m, a, i);
+        t4.viewInfo();
 
     }
 
+   
     private void viewInfo() {
-        System.out.println(name + " " + clg + " " + mob);
-        System.out.println(age + " " + id);
+        System.out.println(name);
+        System.out.println(clg);
+        System.out.println(mob);
+        System.out.println(age);
+        System.out.println(id);
     }
 
+     //non parameterised method
     void setdata() {
-        name = "nsp";
-        mob = "898900";
-        clg = "LIT";
-        age = 24;
-        id = 6789;
+    name = "nsp";
+    mob = "898900";
+    clg = "LIT";
+    age = 24;
+    id = 6789;
+
+    }
+
+    // parametriged method
+    void setdata(String n, String c, String m, int a, int i) {
+        name = n;
+        mob = m;
+        clg = c;
+        age = a;
+        id = i;
 
     }
 
