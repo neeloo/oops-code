@@ -95,7 +95,10 @@ class javaTrainee {
         mob = m;
         clg = c;
         age = a;
-        id = i;
+        id = i; 
+        
+
+
 
     }
 
